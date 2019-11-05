@@ -7,7 +7,14 @@ package com.spartaglobal.json_quiz_challenge;
 public class App 
 {
     public static void main( String[] args )
+
     {
-        System.out.println( "Hello World!" );
+        QuizDTO quizDTO = new QuizDTO("resources/quiz.json");
+        //System.out.println(quizDTO.getQuiz());
+       // System.out.println(quizDTO.getQuizMaths());
+        //System.out.println(quizDTO.getQuizSports());
+       // quizDTO.printQuizMaths();
+       // quizDTO.printQuizSports();
+        System.out.println(quizDTO.quizGenres());
     }
 }
